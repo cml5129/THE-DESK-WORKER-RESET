@@ -1,39 +1,45 @@
-# Exerset
+# THE DESK WORKER RESET
 
-Exerset is a desktop app that reminds desk workers to take movement breaks, complete short PT-approved exercises, and track consistency over time.
+A free desktop app that reminds you to take movement breaks and complete **5 PT-approved movement snacks** throughout the workday.
 
-## Why Exerset
+**Created by Dr Josh, PT**
 
-- Prevent long periods of static sitting
-- Build a daily movement habit with low friction
-- Keep progress visible with a weekly history view
+Follow Dr Josh:
+- 🎬 [YouTube](https://www.youtube.com/@DrJoshPT)
+- 📷 [Instagram](https://www.instagram.com/drjoshpt)
+- 🎵 [TikTok](https://www.tiktok.com/@drjoshpt)
+- 👍 [Facebook](https://www.facebook.com/drjoshpt)
+- 📧 [Email](mailto:drjoshptmail@gmail.com)
+- 🛒 [Stan Store](https://stan.store/drjoshpt)
+
+## Why Movement Snacks?
+
+- **Prevent postural dysfunction** from prolonged sitting
+- **Increase blood flow and energy** throughout your day
+- **Build consistency** with one-click tracking
+- **See your progress** with a weekly history view
+- **Stay accountable** to your movement goals
 
 ## Features
 
-- Timer-based movement reminders (default: 60 minutes)
-- One-click movement snack logging
-- Weekly completion history table
-- System tray behavior for always-on use
-- Start-at-login support on Windows and macOS
-- Native notifications on Windows and macOS
+- ⏱️ Timer-based reminders (customizable, default 60 minutes)
+- 🏃 5 PT-approved movement exercises with video links
+- 📋 One-click logging of completed exercises
+- 📊 Weekly history tracker showing daily completion
+- 🔔 Native system notifications (Windows & macOS)
+- 🖥️ System tray integration—minimize and work without distraction
+- ⚙️ Auto-start on login (Windows & macOS)
+- 🌍 Cross-platform (Windows, macOS, Linux)
 
-## Screens and Behavior
+## Get Started
 
-- Main timer card with reset action
-- Movement snack checklist with linked exercise videos
-- History card showing daily completion state
-- Tray menu for show, reset, startup toggle, and quit
+Download and install for your platform:
 
-## Installation
+- **Windows**: Download `Exerset-Setup.exe` from [Releases](https://github.com/drjosh/exerset/releases)
+- **macOS**: Download `Exerset.dmg` from [Releases](https://github.com/drjosh/exerset/releases)
+- **Linux**: See [Run From Source](#run-from-source)
 
-For non-technical users, use release installers:
-
-- Windows: download Exerset-Setup.exe from Releases
-- macOS: download Exerset.dmg from Releases
-
-Detailed guide: [INSTALL.md](INSTALL.md)
-
-## Run From Source
+Detailed installation guide: [INSTALL.md](INSTALL.md)
 
 ```bash
 git clone https://github.com/drjosh/exerset.git
@@ -41,7 +47,7 @@ cd exerset
 python -m venv .venv
 ```
 
-Windows PowerShell:
+**Windows PowerShell:**
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
@@ -49,7 +55,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-macOS/Linux:
+**macOS/Linux:**
 
 ```bash
 source .venv/bin/activate
@@ -126,6 +132,22 @@ If you find a bug, include:
 - Expected result vs actual result
 - Logs or screenshots if available
 
+## About
+
+**THE DESK WORKER RESET** was created by Dr Josh, PT, to help desk workers build consistent movement habits and prevent the negative effects of prolonged sitting.
+
+Connect with Dr Josh:
+- YouTube: [@DrJoshPT](https://www.youtube.com/@DrJoshPT)
+- Instagram: [@drjoshpt](https://www.instagram.com/drjoshpt)
+- TikTok: [@drjoshpt](https://www.tiktok.com/@drjoshpt)
+- Facebook: [drjoshpt](https://www.facebook.com/drjoshpt)
+- Email: [drjoshptmail@gmail.com](mailto:drjoshptmail@gmail.com)
+- Shop: [Stan Store](https://stan.store/drjoshpt)
+
 ## License
 
-Choose and add a license file before public release.
+MIT License — See [LICENSE](LICENSE) for details.
+
+---
+
+Made with ❤️ by Dr Josh, PT. Keep moving!
