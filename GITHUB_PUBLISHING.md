@@ -51,3 +51,5 @@ After pushing:
 - Create a GitHub Release
 - Upload release binaries (Exerset-Setup.exe, Exerset.dmg)
 - Link to INSTALL.md for user instructions
+
+See [build/FIRST_RELEASE.md](build/FIRST_RELEASE.md) for step-by-step instructions.
