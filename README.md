@@ -2,7 +2,7 @@
 
 A free desktop app that reminds you to take movement breaks and complete **5 PT-approved movement snacks** throughout the workday.
 
-**Created by Dr Josh, PT**
+**Workout program created by Dr Josh, PT**
 
 Follow Dr Josh:
 - 🎬 [YouTube](https://www.youtube.com/@DrJoshPT)
