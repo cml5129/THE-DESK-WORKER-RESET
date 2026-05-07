@@ -10,6 +10,12 @@ ACCENT    = QColor(232, 97, 26)
 _ICO_PATH = Path(__file__).parent.parent.parent / "assets" / "icon.ico"
 IS_WINDOWS = sys.platform.startswith("win")
 IS_MAC = sys.platform == "darwin"
+_TOAST_APP_ID = (
+    "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}"
+    r"\WindowsPowerShell\v1.0\powershell.exe"
+)
+_REMINDER_TOAST_TAG = "exerset-reminder"
+_REMINDER_TOAST_GROUP = "exercise"
 
 
 # ── Flash / stop-flash helpers ────────────────────────────────────────────────
@@ -70,6 +76,9 @@ def send_notification(title: str, body: str) -> None:
         # Escape single quotes for PowerShell string embedding
         t = title.replace("'", "''")
         b = body.replace("'", "''")
+        app_id = _TOAST_APP_ID.replace("'", "''")
+        tag = _REMINDER_TOAST_TAG.replace("'", "''")
+        group = _REMINDER_TOAST_GROUP.replace("'", "''")
         script = (
             "Add-Type -AssemblyName System.Runtime.WindowsRuntime;"
             "[void][Windows.UI.Notifications.ToastNotificationManager,"
@@ -79,10 +88,16 @@ def send_notification(title: str, body: str) -> None:
             "$n=$tmpl.GetElementsByTagName('text');"
             f"$n.Item(0).AppendChild($tmpl.CreateTextNode('{t}'))|Out-Null;"
             f"$n.Item(1).AppendChild($tmpl.CreateTextNode('{b}'))|Out-Null;"
+            f"$appId='{app_id}';"
+            f"$tag='{tag}';"
+            f"$group='{group}';"
+            "$history=[Windows.UI.Notifications.ToastNotificationManager]::History;"
+            "try{$history.Remove($tag,$group,$appId)}catch{};"
             "$nr=[Windows.UI.Notifications.ToastNotificationManager]::"
-            "CreateToastNotifier('{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}"
-            r"\WindowsPowerShell\v1.0\powershell.exe');"
+            "CreateToastNotifier($appId);"
             "$toast=[Windows.UI.Notifications.ToastNotification]::new($tmpl);"
+            "$toast.Tag=$tag;"
+            "$toast.Group=$group;"
             "$nr.Show($toast)"
         )
         try:
