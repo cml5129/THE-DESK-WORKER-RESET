@@ -1,5 +1,7 @@
 # THE DESK WORKER RESET
 
+![The Desk Worker Reset](assets/screenshot.png)
+
 A free desktop app that reminds you to take movement breaks and complete **5 PT-approved movement snacks** throughout the workday.
 
 **Workout program created by Dr Josh, PT**
