@@ -13,13 +13,12 @@ block_cipher = None
 
 a = Analysis(
     ['run.py'],
-    pathex=[str(Path.cwd())],
+    pathex=[str(Path.cwd()), str(Path.cwd() / 'src')],
     binaries=[],
     datas=[
         ('assets', 'assets'),
-        ('src/exerset', 'exerset'),
     ],
-    hiddenimports=['PySide6'],
+    hiddenimports=['PySide6', 'ctypes'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
